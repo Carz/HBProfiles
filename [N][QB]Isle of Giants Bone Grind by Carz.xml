@@ -1,0 +1,155 @@
+﻿<HBProfile>
+  _________________________________
+  |	Profile Brought To You By	    |
+  |			~~Carz~~			            |
+  |_______________________________|
+
+  \\**Description:
+
+  \\**This profile will grind Giant Dinosur Bone - and  then auto-kick to turn in Bones.
+  \\**9999 Bones = Reins of the Bone-White Primal Raptor.
+  \\** Also it will Farm Primal Eggs (1 every 3 days) and other pets that drop form these mobs.
+  
+
+  <Name>[N][QB]Isle of Giants Bone Grind by Carz</Name>
+<!--Version .51 Ahpla Test 3/28/15-->
+  <MinDurability>0.6</MinDurability>
+  <MinFreeBagSlots>1</MinFreeBagSlots>
+
+  <MinLevel>95</MinLevel>
+  <MaxLevel>101</MaxLevel>
+
+  <MailGrey>false</MailGrey>
+  <MailWhite>false</MailWhite>
+  <MailGreen>false</MailGreen>
+  <MailBlue>false</MailBlue>
+  <MailPurple>true</MailPurple>
+
+  <SellGrey>true</SellGrey>
+  <SellWhite>false</SellWhite>
+  <SellGreen>true</SellGreen>
+  <SellBlue>false</SellBlue>
+  <SellPurple>false</SellPurple>
+
+
+
+  <Vendors>
+    <!--Neutral Vendor-->
+    <Vendor Name="Agrant Sharpshot" Entry="70030" Type="Repair" X="6062.477" Y="1370.852" Z="88.56894" />
+  </Vendors>
+
+  <AvoidMobs>
+    
+  </AvoidMobs>
+
+  <Mailboxes>
+  
+  </Mailboxes>
+
+  <Blackspots>
+    <Blackspot X="5777.96" Y="1337.051" Z="28.82458" Radius="3.119629" /><!--Log that fucks us up on mount -->
+
+  </Blackspots>
+
+  <QuestOrder>
+    <!--Seetinsgs-->
+    <CustomBehavior File="UserSettings" KillBetweenHotspots="True"/>
+    <CustomBehavior File="UserSettings" PullDistance="60"/>
+    <While Condition="true">
+                <!--UserDialog to move to Isle-->
+      <If Condition="GetItemCount(94288) &lt; 9999">
+        <CustomBehavior File="UserDialog" AllowBotStop="false" SoundCue="Exclamation" SoundCueInterval="15"
+                       ExpiryTime="15" ExpiryAction="InputEnabled_Continue"
+                       Text=" User Must fly to Isle of Giants for this to work. To get there Fly North OF Kun-Lai Summit."/>
+          <!--Message's-->             
+        <CustomBehavior File="Message" Text="We need Bones.  Moving to GrindArea(Without Stopping for Combat)." LogColor="Gold" />
+        <CustomBehavior File="NoCombatMoveTo" X="5766.482" Y="1245.186" Z="2.007769" />
+        <CustomBehavior File="Message" Text="We've arrived, let's get 9999 Bones for that mount ..." LogColor="Gold" />
+          
+         
+         
+
+        <SetGrindArea>
+          <GrindArea>
+            <TargetMinLevel>90</TargetMinLevel>
+            <TargetMaxLevel>101</TargetMaxLevel>
+            <MaxDistance>60</MaxDistance> 
+            
+            <TargetElites>True</TargetElites>
+           <!-- ///// Recommended True due to All Mobs are Elites on Isle  \\\\\ -->
+            <RandomizeHotspots>false</RandomizeHotspots>
+            
+
+            <MobIds>
+              69992 70013 70016 70012 69925 70019 70017 70015 70011 69993 69925 69983 <!--Mobs on Isle-->
+            </MobIds>
+
+            
+
+
+            <Hotspots>
+              <Hotspot X="5766.482" Y="1245.186" Z="2.007769" /> <!--This is Start--> 
+              <Hotspot X="5811.972" Y="1222.181" Z="7.989522" />
+              <Hotspot X="5842.781" Y="1155.319" Z="10.05324" />
+              <Hotspot X="5852.26" Y="1099.497" Z="8.967467" />
+              <Hotspot X="5845.279" Y="1034.05" Z="16.70236" />
+              <Hotspot X="5835.501" Y="980.7155" Z="23.30573" />
+              <Hotspot X="5833.388" Y="900.1016" Z="17.04853" />
+              <Hotspot X="5831.164" Y="842.3251" Z="11.878" />
+              <Hotspot X="5846.583" Y="795.1614" Z="14.62001" />
+              <Hotspot X="5864.141" Y="764.7885" Z="17.24395" />
+              <Hotspot X="5840.767" Y="797" Z="13.4118" />
+              <Hotspot X="5796.738" Y="817.6813" Z="3.552032" />
+              <Hotspot X="5786.586" Y="854.011" Z="3.079369" />
+              <Hotspot X="5808.018" Y="902.6374" Z="10.05476" />
+              <Hotspot X="5833.897" Y="952.245" Z="22.10302" />
+              <Hotspot X="5836.016" Y="1003.814" Z="21.60274" />
+              <Hotspot X="5840.859" Y="1049.678" Z="13.20245" />
+              <Hotspot X="5837.553" Y="1103.823" Z="6.551116" />
+              <Hotspot X="5818.305" Y="1165.031" Z="7.218368" />
+              <Hotspot X="5814.613" Y="1202.268" Z="8.067842" />
+              <Hotspot X="5787.663" Y="1259.662" Z="6.425754" />
+              <Hotspot X="5771.648" Y="1310.941" Z="20.12689" />
+              <Hotspot X="5813.891" Y="1325.82" Z="29.26768" />
+              <Hotspot X="5846.219" Y="1298.999" Z="35.04534" />
+              <Hotspot X="5865.057" Y="1354.866" Z="27.61032" />
+              <Hotspot X="5822.137" Y="1387.662" Z="26.87769" />
+              <Hotspot X="5761.735" Y="1416.197" Z="28.84096" />
+              <Hotspot X="5820.084" Y="1454.015" Z="38.45153" />
+              <Hotspot X="5865.679" Y="1479.322" Z="47.10305" />
+              <Hotspot X="5864.998" Y="1536.748" Z="47.573" />
+              <Hotspot X="5912.67" Y="1575.567" Z="47.81127" />
+              <Hotspot X="5962.051" Y="1588.113" Z="36.61734" />
+              <Hotspot X="5941.936" Y="1562.139" Z="41.31158" />
+              <Hotspot X="5912.429" Y="1523.885" Z="50.59975" />
+              <Hotspot X="5871.25" Y="1492.69" Z="46.26369" />
+              <Hotspot X="5819.148" Y="1445.978" Z="36.11017" />
+              <Hotspot X="5794.055" Y="1369.385" Z="28.49451" />
+              <Hotspot X="5778.031" Y="1285.488" Z="10.92536" />
+              <Hotspot X="5778.663" Y="1240.678" Z="2.383108" /> 
+
+            </Hotspots>
+          </GrindArea>
+        </SetGrindArea>
+        <GrindTo Condition="GetItemCount(94288) >= 9999" GoalText="Farming Bones" />
+        <CustomBehavior File="Message" Text="Time to turn in." LogColor="Gold" />
+      </If>
+      
+      
+          <!--Time to get that mount-->
+
+      <While Condition="GetItemCount(94288) >= 9999">
+        <CustomBehavior File="NoCombatMoveTo" X="6008.016" Y="1534.062" Z="34.52825"  />
+        <CustomBehavior File="NoCombatMoveTo" X="6028.856" Y="1427.675" Z="26.41301"  />
+        <CustomBehavior File="InteractWith" MobId="70022" Range="5" />
+        <CustomBehavior File="RunMacro" Macro="/script SelectGossipAvailableQuest(5)" WaitTime="200" />
+        <CustomBehavior File="Misc\RunLua" Lua="QuestFrameCompleteButton:Click()" WaitTime="200" />
+        <CustomBehavior File="Misc\RunLua" Lua="QuestFrameCompleteQuestButton:Click()" WaitTime="200" />
+      </While>
+
+     
+
+    </While>
+
+  </QuestOrder>
+</HBProfile>
