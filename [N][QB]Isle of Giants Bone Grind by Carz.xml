@@ -12,7 +12,12 @@
   
 
   <Name>[N][QB]Isle of Giants Bone Grind by Carz</Name>
-<!--Version .51 Ahpla Test 3/28/15-->
+<!--Version .53.1 Ahpla Test 3/29/15
+            Change log        
+            
+            .52 Delete max Distace settings to pull me mobs
+            .53 Change all Hotspots a long with new starting point
+            .53.1 Add dialong on promoet that comes up -->
   <MinDurability>0.6</MinDurability>
   <MinFreeBagSlots>1</MinFreeBagSlots>
 
@@ -60,10 +65,10 @@
       <If Condition="GetItemCount(94288) &lt; 9999">
         <CustomBehavior File="UserDialog" AllowBotStop="false" SoundCue="Exclamation" SoundCueInterval="15"
                        ExpiryTime="15" ExpiryAction="InputEnabled_Continue"
-                       Text=" User Must fly to Isle of Giants for this to work. To get there Fly North OF Kun-Lai Summit."/>
+                       Text=" User Must fly to Isle of Giants for this to work. To get there Fly North OF Kun-Lai Summit. If on Isle already it will move to the starting point."/>
           <!--Message's-->             
         <CustomBehavior File="Message" Text="We need Bones.  Moving to GrindArea(Without Stopping for Combat)." LogColor="Gold" />
-        <CustomBehavior File="NoCombatMoveTo" X="5766.482" Y="1245.186" Z="2.007769" />
+        <CustomBehavior File="NoCombatMoveTo" X="5759.263" Y="1173.697" Z="1.556524" /><!--Also First spot of Starting-->
         <CustomBehavior File="Message" Text="We've arrived, let's get 9999 Bones for that mount ..." LogColor="Gold" />
           
          
@@ -73,7 +78,6 @@
           <GrindArea>
             <TargetMinLevel>90</TargetMinLevel>
             <TargetMaxLevel>101</TargetMaxLevel>
-            <MaxDistance>60</MaxDistance> 
             
             <TargetElites>True</TargetElites>
            <!-- ///// Recommended True due to All Mobs are Elites on Isle  \\\\\ -->
@@ -88,45 +92,39 @@
 
 
             <Hotspots>
-              <Hotspot X="5766.482" Y="1245.186" Z="2.007769" /> <!--This is Start--> 
-              <Hotspot X="5811.972" Y="1222.181" Z="7.989522" />
-              <Hotspot X="5842.781" Y="1155.319" Z="10.05324" />
-              <Hotspot X="5852.26" Y="1099.497" Z="8.967467" />
-              <Hotspot X="5845.279" Y="1034.05" Z="16.70236" />
-              <Hotspot X="5835.501" Y="980.7155" Z="23.30573" />
-              <Hotspot X="5833.388" Y="900.1016" Z="17.04853" />
-              <Hotspot X="5831.164" Y="842.3251" Z="11.878" />
-              <Hotspot X="5846.583" Y="795.1614" Z="14.62001" />
-              <Hotspot X="5864.141" Y="764.7885" Z="17.24395" />
-              <Hotspot X="5840.767" Y="797" Z="13.4118" />
-              <Hotspot X="5796.738" Y="817.6813" Z="3.552032" />
-              <Hotspot X="5786.586" Y="854.011" Z="3.079369" />
-              <Hotspot X="5808.018" Y="902.6374" Z="10.05476" />
-              <Hotspot X="5833.897" Y="952.245" Z="22.10302" />
-              <Hotspot X="5836.016" Y="1003.814" Z="21.60274" />
-              <Hotspot X="5840.859" Y="1049.678" Z="13.20245" />
-              <Hotspot X="5837.553" Y="1103.823" Z="6.551116" />
-              <Hotspot X="5818.305" Y="1165.031" Z="7.218368" />
-              <Hotspot X="5814.613" Y="1202.268" Z="8.067842" />
-              <Hotspot X="5787.663" Y="1259.662" Z="6.425754" />
-              <Hotspot X="5771.648" Y="1310.941" Z="20.12689" />
-              <Hotspot X="5813.891" Y="1325.82" Z="29.26768" />
-              <Hotspot X="5846.219" Y="1298.999" Z="35.04534" />
-              <Hotspot X="5865.057" Y="1354.866" Z="27.61032" />
-              <Hotspot X="5822.137" Y="1387.662" Z="26.87769" />
-              <Hotspot X="5761.735" Y="1416.197" Z="28.84096" />
-              <Hotspot X="5820.084" Y="1454.015" Z="38.45153" />
-              <Hotspot X="5865.679" Y="1479.322" Z="47.10305" />
-              <Hotspot X="5864.998" Y="1536.748" Z="47.573" />
-              <Hotspot X="5912.67" Y="1575.567" Z="47.81127" />
-              <Hotspot X="5962.051" Y="1588.113" Z="36.61734" />
-              <Hotspot X="5941.936" Y="1562.139" Z="41.31158" />
-              <Hotspot X="5912.429" Y="1523.885" Z="50.59975" />
-              <Hotspot X="5871.25" Y="1492.69" Z="46.26369" />
-              <Hotspot X="5819.148" Y="1445.978" Z="36.11017" />
-              <Hotspot X="5794.055" Y="1369.385" Z="28.49451" />
-              <Hotspot X="5778.031" Y="1285.488" Z="10.92536" />
-              <Hotspot X="5778.663" Y="1240.678" Z="2.383108" /> 
+              <Hotspot X="5759.263" Y="1173.697" Z="1.556524" /> <!--This is Starting Point-->
+              <Hotspot X="5822.451" Y="1159.849" Z="7.733967" />
+              <Hotspot X="5837.809" Y="1099.244" Z="7.009828" />
+              <Hotspot X="5841.104" Y="1039.542" Z="16.30577" />
+              <Hotspot X="5853.772" Y="997.9329" Z="21.73147" />
+              <Hotspot X="5826.668" Y="971.4614" Z="23.92593" />
+              <Hotspot X="5841.484" Y="924.6021" Z="19.03511" />
+              <Hotspot X="5834.61" Y="858.7761" Z="12.45876" />
+              <Hotspot X="5844.994" Y="808.0527" Z="12.49199" />
+              <Hotspot X="5868.573" Y="760.9589" Z="17.23376" />
+              <Hotspot X="5920.093" Y="731.9364" Z="26.42717" />
+              <Hotspot X="5948.331" Y="700.5021" Z="24.63345" />
+              <Hotspot X="5904.527" Y="689.142" Z="25.73918" />
+              <Hotspot X="5878.658" Y="745.0582" Z="19.11235" />
+              <Hotspot X="5829.772" Y="796.7406" Z="12.36839" />
+              <Hotspot X="5794.722" Y="817.4993" Z="3.252424" />
+              <Hotspot X="5786.888" Y="870.4991" Z="2.623106" />
+              <Hotspot X="5835.806" Y="943.1041" Z="20.6339" />
+              <Hotspot X="5838.775" Y="1026.513" Z="18.42545" />
+              <Hotspot X="5825.945" Y="1140.216" Z="6.97699" />
+              <Hotspot X="5801.219" Y="1220.05" Z="5.450932" />
+              <Hotspot X="5774.768" Y="1286.244" Z="10.81169" />
+              <Hotspot X="5809.974" Y="1315.264" Z="29.46539" />
+              <Hotspot X="5850.449" Y="1289.26" Z="36.42165" />
+              <Hotspot X="5856.078" Y="1350.934" Z="27.49876" />
+              <Hotspot X="5791.799" Y="1377.552" Z="28.69521" />
+              <Hotspot X="5741.887" Y="1412.595" Z="29.60071" />
+              <Hotspot X="5819.169" Y="1461.097" Z="40.76424" />
+              <Hotspot X="5827.719" Y="1523.868" Z="46.86802" />
+              <Hotspot X="5876.816" Y="1522.883" Z="46.61728" />
+              <Hotspot X="5912.098" Y="1569.199" Z="48.51892" />
+              <Hotspot X="5988.718" Y="1579.36" Z="34.02032" />
+              <Hotspot X="5904.297" Y="1500.545" Z="48.12075" />
 
             </Hotspots>
           </GrindArea>
