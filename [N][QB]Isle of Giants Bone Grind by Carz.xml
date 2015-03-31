@@ -8,18 +8,22 @@
 
   \\**This profile will grind Giant Dinosur Bone - and  then auto-kick to turn in Bones.
   \\**9999 Bones = Reins of the Bone-White Primal Raptor.
-  \\** Also it will Farm Primal Eggs (1 every 3 days) and other pets that drop form these mobs.-->
+  \\** Also it will Farm Primal Eggs (1 every 3 days) and other pets that drop form these mobs.
+  \\** This was test on a 610 Balnce Druid-->
   
 
   <Name>[N][QB]Isle of Giants Bone Grind by Carz</Name>
-      <!-- Version .55 Ahpla Test 3/29/15
+      <!-- Version .57.1 Ahpla Test 3/29/15
             Change log        
             
-            .52 Delete max Distace settings to pull me mobs
+            .52 Change max Distace to pull distance
             .53 Change all Hotspots a long with new starting point
             .53.1 Add dialong on promoet that comes up
             .54 Added missing mob ids
-            .55 Change Satring point to a better one-->
+            .55 Change Satring point to a better one
+            .56 added more hotspots
+            .57 Remove a hotspot that made us look more like a bot.
+            .57.1 Code clean up-->
   
   <MinDurability>0.6</MinDurability>
   <MinFreeBagSlots>1</MinFreeBagSlots>
@@ -47,33 +51,36 @@
   </Vendors>
 
   <AvoidMobs>
-    
+    <!--Dont need this as do dont have a problem. -->
   </AvoidMobs>
 
   <Mailboxes>
-  
+  <!--There is no mailbox on isle sorry -->
   </Mailboxes>
 
   <Blackspots>
     <Blackspot X="5777.96" Y="1337.051" Z="28.82458" Radius="3.119629" /><!--Log that fucks us up on mount -->
-
-  </Blackspots>
+</Blackspots>
 
   <QuestOrder>
     
     
     <!--Seetinsgs-->
     <CustomBehavior File="UserSettings" KillBetweenHotspots="True"/>
+    <CustomBehavior File="UserSettings" PullDistance="100"/>
+    
     <While Condition="true">
-                
       
-      <!--UserDialog to move to Isle-->
-      <If Condition="GetItemCount(94288) &lt; 9999">
-        <CustomBehavior File="UserDialog" AllowBotStop="false" SoundCue="Exclamation" SoundCueInterval="15"
-                       ExpiryTime="15" ExpiryAction="InputEnabled_Continue"
-                       Text=" User Must fly to Isle of Giants for this to work. To get there Fly North OF Kun-Lai Summit. If on Isle already it will move to the starting point."/>
-          
+       <!--UserDialog to move to Isle-->
+      <CustomBehavior File="UserDialog" AllowBotStop="false" SoundCue="Exclamation" SoundCueInterval="15"
+             ExpiryTime="15" ExpiryAction="InputEnabled_Continue"
+             Text=" User Must fly to Isle of Giants for this to work. To get there Fly North OF Kun-Lai Summit. If on Isle already it will move to the starting point."/>
+      
+     
+      
         
+          
+        <If Condition="GetItemCount(94288) &lt; 9999">
         <!--Message's-->             
         <CustomBehavior File="Message" Text="We need Bones.  Moving to GrindArea(Without Stopping for Combat)." LogColor="Gold" />
         <CustomBehavior File="NoCombatMoveTo" X="5789.734" Y="1260.159" Z="6.452579" /><!--Also First spot of Starting-->
@@ -93,7 +100,7 @@
             
 
             <MobIds>
-              69992 70013 70016 70012 69925 70019 70017 70015 70011 69993 69925 69983 70007 <!--Mobs on Isle-->
+          69983  69992 69925 69993 69925 70013 70016 70012  70019 70017 70015 70011  70007 70010 <!--Mobs on Isle-->
             </MobIds>
 
             
@@ -112,7 +119,9 @@
               <Hotspot X="5868.573" Y="760.9589" Z="17.23376" />
               <Hotspot X="5920.093" Y="731.9364" Z="26.42717" />
               <Hotspot X="5948.331" Y="700.5021" Z="24.63345" />
-              <Hotspot X="5904.527" Y="689.142" Z="25.73918" />
+              <Hotspot X="5937.91" Y="719.5015" Z="25.50788" />
+              <Hotspot X="5954.672" Y="690.0702" Z="27.20358" />
+              <Hotspot X="5889.401" Y="687.5229" Z="24.06552" />
               <Hotspot X="5878.658" Y="745.0582" Z="19.11235" />
               <Hotspot X="5829.772" Y="796.7406" Z="12.36839" />
               <Hotspot X="5794.722" Y="817.4993" Z="3.252424" />
@@ -131,6 +140,7 @@
               <Hotspot X="5827.719" Y="1523.868" Z="46.86802" />
               <Hotspot X="5876.816" Y="1522.883" Z="46.61728" />
               <Hotspot X="5912.098" Y="1569.199" Z="48.51892" />
+              <Hotspot X="5987.346" Y="1604.462" Z="34.42627" />
               <Hotspot X="5988.718" Y="1579.36" Z="34.02032" />
               <Hotspot X="5904.297" Y="1500.545" Z="48.12075" />
 
