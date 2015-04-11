@@ -9,12 +9,11 @@
   \\**This profile will grind Giant Dinosur Bone - and  then auto-kick to turn in Bones.
   \\**9999 Bones = Reins of the Bone-White Primal Raptor.
   \\** Also it will Farm Primal Eggs (1 every 3 days) and other pets that drop form these mobs.
-  \\** This was test on a 610 Balnce Druid
-  \\** This profile will sell everthing but bones and cloth-->
+  \\** This was test on a 610 Balnce Druid-->
   
 
   <Name>[N][QB]Isle of Giants Bone Grind by Carz</Name>
-      <!-- Version .58 Ahpla Test 3/31/15
+      <!-- Version .57.1 Ahpla Test 3/29/15
             Change log        
             
             .52 Change max Distace to pull distance
@@ -24,9 +23,7 @@
             .55 Change Satring point to a better one
             .56 added more hotspots
             .57 Remove a hotspot that made us look more like a bot.
-            .57.1 Code clean up
-            .58 Remove a bottish looking hotspot
-            .59 Readded Max Distance and move under Grind area tag-->
+            .57.1 Code clean up-->
   
   <MinDurability>0.6</MinDurability>
   <MinFreeBagSlots>1</MinFreeBagSlots>
@@ -43,8 +40,8 @@
   <SellGrey>true</SellGrey>
   <SellWhite>false</SellWhite>
   <SellGreen>true</SellGreen>
-  <SellBlue>true</SellBlue>
-  <SellPurple>true</SellPurple>
+  <SellBlue>false</SellBlue>
+  <SellPurple>false</SellPurple>
 
 
 
@@ -102,11 +99,9 @@
             <RandomizeHotspots>false</RandomizeHotspots>
             
 
-        
-              <MaxDistance>100</MaxDistance>
-            
-              <MobIds> 69925 69983 69991 69993 70004 70005 70008 70009 70010 70011 70012 70013 70014 70015 70016 70017 70018 70019 70020</MobIds><!--Mobs on Isle-->
-            
+            <MobIds>
+          69983  69992 69925 69993 69925 70013 70016 70012  70019 70017 70015 70011  70007 70010 <!--Mobs on Isle-->
+            </MobIds>
 
             
 
@@ -124,6 +119,7 @@
               <Hotspot X="5868.573" Y="760.9589" Z="17.23376" />
               <Hotspot X="5920.093" Y="731.9364" Z="26.42717" />
               <Hotspot X="5948.331" Y="700.5021" Z="24.63345" />
+              <Hotspot X="5937.91" Y="719.5015" Z="25.50788" />
               <Hotspot X="5954.672" Y="690.0702" Z="27.20358" />
               <Hotspot X="5889.401" Y="687.5229" Z="24.06552" />
               <Hotspot X="5878.658" Y="745.0582" Z="19.11235" />
