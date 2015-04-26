@@ -38,12 +38,12 @@ namespace BreakTime
         #region Overrides
         public override string Name { get { return "BreakTime"; } }
         public override string Author { get { return "Carz"; } }
-        public override Version Version { get { return new Version(.001); } } // Aphpla testing
         public override bool WantButton { get { return true; } }
+        public override Version Version { get { return new Version(0, 0, 0, 1); } }                     //Aphla Testing
         public override string ButtonText { get { return "Settings"; } }
         public override void OnButtonPress()
         {
-            new Form1().ShowDialog();
+            new Form1().ShowDialog(); 
         }
         public override void OnEnable()
         {
