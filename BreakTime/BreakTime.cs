@@ -26,7 +26,7 @@ namespace BreakTime
         public int minBetweenTime;                                                              // Minimum time to bot
         public int maxBetweenTime;                                                              // Maximum time to bot
         public static bool isBreaking = false;                                                  // Are we taking a break?!
-        public static int logTimer = 1;                                                         // Minutes till we post the next log into HB!
+        public static int logTimer = 10;                                                         // Minutes till we post the next log into HB!
         public static int waitTime = 0;                                                         // Time we will wait based on min & maxBreaktime
         public static int realBreakTime = 0;
         public static DateTime bottingStartTime, breakStartTime;
