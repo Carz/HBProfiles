@@ -23,7 +23,8 @@
             .55 Change Satring point to a better one
             .56 added more hotspots
             .57 Remove a hotspot that made us look more like a bot.
-            .57.1 Code clean up-->
+            .57.1 Code clean up
+            .58 More code clean up-->
   
   <MinDurability>0.6</MinDurability>
   <MinFreeBagSlots>1</MinFreeBagSlots>
