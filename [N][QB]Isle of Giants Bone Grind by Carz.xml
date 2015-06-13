@@ -7,13 +7,14 @@
  <!-- \\**Description:
 
   \\**This profile will grind Giant Dinosur Bone - and  then auto-kick to turn in Bones.
-  \\**9999 Bones = Reins of the Bone-White Primal Raptor.
-  \\** Also it will Farm Primal Eggs (1 every 3 days) and other pets that drop form these mobs.
-  \\** This was test on a 610 Balnce Druid-->
+  \\** 9999 Bones = Reins of the Bone-White Primal Raptor.
+  \\** Also it will Farm Primal Eggs (1 every 3 days Allowed per toon) and other pets that drop form these mobs.
+  \\** This was test on a 610 Balnce Druid
+  \\** Also Tested on a 590 BM Hunter  -->
   
 
   <Name>[N][QB]Isle of Giants Bone Grind by Carz</Name>
-      <!-- Version .57.1 Ahpla Test 3/29/15
+      <!-- Version .58 Ahpla Test 3/29/15
             Change log        
             
             .52 Change max Distace to pull distance
@@ -101,57 +102,56 @@
             
 
             <MobIds>
-          69983  69992 69925 69993 69925 70013 70016 70012  70019 70017 70015 70011  70007 70010 <!--Mobs on Isle-->
+          69983  69992 69925 69993 69925 70013 70016 70012  70019 70017 70015 70011  7006 70007 70008 70009 70010 <!--Mobs on Isle-->
             </MobIds>
 
             
 
 
-            <Hotspots>
-              <Hotspot X="5789.734" Y="1260.159" Z="6.452579" /> <!--This is Starting Point-->
-              <Hotspot X="5822.451" Y="1159.849" Z="7.733967" />
-              <Hotspot X="5837.809" Y="1099.244" Z="7.009828" />
-              <Hotspot X="5841.104" Y="1039.542" Z="16.30577" />
-              <Hotspot X="5853.772" Y="997.9329" Z="21.73147" />
-              <Hotspot X="5826.668" Y="971.4614" Z="23.92593" />
-              <Hotspot X="5841.484" Y="924.6021" Z="19.03511" />
-              <Hotspot X="5834.61" Y="858.7761" Z="12.45876" />
-              <Hotspot X="5844.994" Y="808.0527" Z="12.49199" />
-              <Hotspot X="5868.573" Y="760.9589" Z="17.23376" />
-              <Hotspot X="5920.093" Y="731.9364" Z="26.42717" />
-              <Hotspot X="5948.331" Y="700.5021" Z="24.63345" />
-              <Hotspot X="5937.91" Y="719.5015" Z="25.50788" />
-              <Hotspot X="5954.672" Y="690.0702" Z="27.20358" />
-              <Hotspot X="5889.401" Y="687.5229" Z="24.06552" />
-              <Hotspot X="5878.658" Y="745.0582" Z="19.11235" />
-              <Hotspot X="5829.772" Y="796.7406" Z="12.36839" />
-              <Hotspot X="5794.722" Y="817.4993" Z="3.252424" />
-              <Hotspot X="5786.888" Y="870.4991" Z="2.623106" />
-              <Hotspot X="5835.806" Y="943.1041" Z="20.6339" />
-              <Hotspot X="5838.775" Y="1026.513" Z="18.42545" />
-              <Hotspot X="5825.945" Y="1140.216" Z="6.97699" />
-              <Hotspot X="5801.219" Y="1220.05" Z="5.450932" />
-              <Hotspot X="5774.768" Y="1286.244" Z="10.81169" />
-              <Hotspot X="5809.974" Y="1315.264" Z="29.46539" />
-              <Hotspot X="5850.449" Y="1289.26" Z="36.42165" />
-              <Hotspot X="5856.078" Y="1350.934" Z="27.49876" />
-              <Hotspot X="5791.799" Y="1377.552" Z="28.69521" />
-              <Hotspot X="5741.887" Y="1412.595" Z="29.60071" />
-              <Hotspot X="5819.169" Y="1461.097" Z="40.76424" />
-              <Hotspot X="5827.719" Y="1523.868" Z="46.86802" />
-              <Hotspot X="5876.816" Y="1522.883" Z="46.61728" />
-              <Hotspot X="5912.098" Y="1569.199" Z="48.51892" />
-              <Hotspot X="5987.346" Y="1604.462" Z="34.42627" />
-              <Hotspot X="5988.718" Y="1579.36" Z="34.02032" />
-              <Hotspot X="5904.297" Y="1500.545" Z="48.12075" />
-
+           <Hotspots>
+             <Hotspot X="5772.979" Y="1292.503" Z="12.93993" />
+             <Hotspot X="5804.289" Y="1345.925" Z="29.65628" />
+             <Hotspot X="5790.201" Y="1422.321" Z="26.5651" />
+             <Hotspot X="5845.292" Y="1485.458" Z="48.12852" />
+             <Hotspot X="5887.79" Y="1526.881" Z="47.82824" />
+             <Hotspot X="5942.308" Y="1545.975" Z="49.05457" />
+             <Hotspot X="5986.959" Y="1576.137" Z="34.30268" />
+             <Hotspot X="6076.671" Y="1538.34" Z="31.41706" />
+             <Hotspot X="6094.841" Y="1491.709" Z="46.89246" />
+             <Hotspot X="6042.833" Y="1492.156" Z="64.05863" />
+             <Hotspot X="6026.42" Y="1437.069" Z="83.3195" />
+             <Hotspot X="5986.667" Y="1370.8" Z="85.45585" />
+             <Hotspot X="5996.254" Y="1293.5" Z="86.63597" />
+             <Hotspot X="6050.032" Y="1245.908" Z="62.6564" />
+             <Hotspot X="6133.551" Y="1205.147" Z="61.78866" />
+             <Hotspot X="6146.699" Y="1144.509" Z="60.89676" />
+             <Hotspot X="6153.83" Y="1033.508" Z="60.16117" />
+             <Hotspot X="6106.03" Y="992.2494" Z="59.93952" />
+             <Hotspot X="6185.049" Y="952.8622" Z="99.32232" />
+             <Hotspot X="6199.691" Y="916.0932" Z="103.7726" />
+             <Hotspot X="6228.271" Y="813.6691" Z="78.03821" />
+             <Hotspot X="6199.893" Y="765.2635" Z="72.83702" />
+             <Hotspot X="6133.496" Y="754.8431" Z="70.71207" />
+             <Hotspot X="6103.855" Y="688.4368" Z="54.08693" />
+             <Hotspot X="6062.597" Y="722.3193" Z="49.86487" />
+             <Hotspot X="5984.78" Y="806.3027" Z="42.32745" />
+             <Hotspot X="5931.975" Y="855.5748" Z="42.49138" />
+             <Hotspot X="5944.796" Y="777.9489" Z="37.06323" />
+             <Hotspot X="5953.006" Y="683.7611" Z="26.3966" />
+             <Hotspot X="5898.732" Y="722.4614" Z="23.8584" />
+             <Hotspot X="5859.227" Y="777.828" Z="17.29486" />
+             <Hotspot X="5821.302" Y="846.7769" Z="12.61922" />
+             <Hotspot X="5845.436" Y="974.9471" Z="22.60572" />
+             <Hotspot X="5831.758" Y="1139.527" Z="7.025881" />
+             <Hotspot X="5793" Y="1238.571" Z="6.404403" />
+             
             </Hotspots>
             
           </GrindArea>
           
         </SetGrindArea>
         
-        <GrindTo Condition="GetItemCount(94288) >= 9999" GoalText="Farming Bones" />
+        <GrindTo Condition="GetItemCount(94288) >= 9999" GoalText="Farming 9999 Bones" LogColor="Gold" />
         <CustomBehavior File="Message" Text="Time to turn in." LogColor="Gold" />
         
       </If>
